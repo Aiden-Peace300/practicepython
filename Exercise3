@@ -4,7 +4,7 @@ import copy
 
 
 # less_than_five: this function will take in one list as a parameter
-# returning: print statements to console to inform user the elements that
+# returning: print statements to console to inform user of the elements that
 # are less than five in given list
 def less_than_five(list_holding_less_than_5_values):
 
@@ -16,6 +16,9 @@ def less_than_five(list_holding_less_than_5_values):
     print()
 
 
+# print_list: is a function that takes in one list as an argument
+# this function is meant to output all the elements in the list passed in.
+# returning: printing elements to console
 def print_list(list_of_nums):
 
     print("Here is a list of all the elements in original list:")
@@ -32,6 +35,7 @@ def main():
     # creating shallow copy of 'a'
     list_holding_less_than_5_values = copy.copy(a)
 
+    # putting functions to use
     print_list(a)
     less_than_five(list_holding_less_than_5_values)
 
