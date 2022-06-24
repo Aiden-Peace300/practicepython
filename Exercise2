@@ -29,10 +29,6 @@ def main():
     print("enter 'exit' to end program")
     print()
 
-    # user_num = 1 so that we
-    # can force user_num to enter while loop
-    user_num = 1
-
     # user will be prompted to enter a number
     # this program will run until the user enters 'x'
     # then that will trigger the while loop
