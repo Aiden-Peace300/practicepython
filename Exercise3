@@ -45,6 +45,7 @@ def main():
 
     a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 
+    # getting users input 
     users_max_num = input("Please enter a number: ")
 
     # creating shallow copy of 'a'
@@ -54,6 +55,16 @@ def main():
     print_list(a)
     less_than_five(list_holding_less_than_5_values)
     less_than_given_num_function(a, users_max_num)
+
+'''
+EASIER WAY (USEFUL WHEN THINKING IN BIG-O-NOTATION): 
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+b = []
+for x in a:
+    if x < 5:
+        b.append(x)
+print(b)
+'''
 
 
 if __name__ == "__main__":
