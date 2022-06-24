@@ -1,2 +1,2 @@
-# practicepython
-learning from practicepython.org
+# practicepython.org
+learning from practicepython.org and publishing each exercise on github. 
