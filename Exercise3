@@ -6,26 +6,34 @@ import copy
 # less_than_five: this function will take in one list as a parameter
 # returning: print statements to console to inform user the elements that
 # are less than five in given list
-def less_than_five(list_of_nums):
-
-    print("Here is a list of all the elements in original list:")
-    for item in list_of_nums:
-        print(item)
-
-    list_holding_less_than_5_values = copy.copy(list_of_nums)
-
-    print()
+def less_than_five(list_holding_less_than_5_values):
 
     print("Here is a list of all the elements less than 5 in original list: ")
     for item in list_holding_less_than_5_values:
         if item < 5:
             print(item)
 
+    print()
+
+
+def print_list(list_of_nums):
+
+    print("Here is a list of all the elements in original list:")
+    for item in list_of_nums:
+        print(item)
+
+    print()
+
 
 def main():
 
     a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-    less_than_five(a)
+
+    # creating shallow copy of 'a'
+    list_holding_less_than_5_values = copy.copy(a)
+
+    print_list(a)
+    less_than_five(list_holding_less_than_5_values)
 
 
 if __name__ == "__main__":
