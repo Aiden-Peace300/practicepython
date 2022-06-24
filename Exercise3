@@ -1,6 +1,6 @@
 #! /urs/bin/env python3
 
-import copy
+import copy   # copy library enables us to use .copy() function
 
 
 # less_than_five: this function will take in one list as a parameter
@@ -33,7 +33,7 @@ def print_list(list_of_nums):
 # are less than given number in given list
 def less_than_given_num_function(given_list, max_num):
 
-    print("Here is a list of all the elements less than" + max_num + " in original list: ")
+    print("Here is a list of all the elements less than " + max_num + " in original list: ")
     for item in given_list:
         if item < int(max_num):
             print(item)
