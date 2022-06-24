@@ -17,7 +17,7 @@ def odd_or_even_function(num, check):
     else:
         print("The number " + str(num) + " is an odd number")
 
-    # Calculating  and outputting when num can or can't divide evenly into check
+    # Calculating and outputting when num can or can't divide evenly into check
     if int(num) % int(check) == 0:
         print(str(num) + " divides evenly by " + str(check))
     else:
