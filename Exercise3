@@ -1,6 +1,6 @@
 #! /urs/bin/env python3
 
-import copy
+import copy #the copy libary enables us to use .copy()
 
 
 # less_than_five: this function will take in one list as a parameter
