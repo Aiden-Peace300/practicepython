@@ -19,7 +19,7 @@ def finding_commonalities_function(list1, list2):
 
 # generating_list_function: this function will take in two list as a parameter
 # returning: This will output nothing.
-# goal: to create put randomly generated numbers into the empty list passed in
+# goal: to create randomly generated numbers into the empty list(s) passed in
 def generating_list_function(list1, list2):
     for i in range(0, 11):
         n = random.randint(1, 100)
