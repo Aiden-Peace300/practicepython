@@ -7,7 +7,7 @@
 # Note: A palindrome is a string that reads the same forwards and backwards.
 def palindrome_function(user_string):
 
-    # 'user_list_no_whitespaces' is a list that
+    # 'original_list_no_whitespaces' is a list that
     # holds the same value as 'user_string' but with no
     # whitespaces and lower case
     original_list_no_whitespaces = []
