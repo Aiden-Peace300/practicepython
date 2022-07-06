@@ -34,7 +34,7 @@ def main():
             # if the user and the randomly generated number do not match
             # we will tell the user if their guess was too high or too low
             # and ask them to guess again until their guess and
-            # random_number are equivalent
+            # random_number are equivalent 
             if int(users_guess) < int(random_number):
                 print("Your guess was too low. Try again")
             elif int(users_guess) > int(random_number):
