@@ -13,10 +13,11 @@ def main():
     # taking in users guess for future usage
     print("Welcome to Aiden's Guessing Random Number Game\nPlease enter 'exit' when you are ready to exit")
     users_guess = input("Enter a number from 1-9: ")
+    total_guess = 0
 
     while users_guess.lower != 'exit':
         if users_guess == 'exit':
-            print("Goodbye")
+            print("You guessed " + str(total_guess) + " times overall Goodbye")
             break
         if int(random_number) == int(users_guess):
             # if the user and the randomly generated number do match
@@ -26,6 +27,7 @@ def main():
             print("Random number was: " + str(random_number))
             print("your number was: " + str(users_guess))
             print()
+            total_guess += 1
             random_number = random.randrange(1, 10)
             users_guess = input("Enter a number from 1-9: ")
         else:
@@ -33,7 +35,6 @@ def main():
             # we will tell the user if their guess was too high or too low
             # and ask them to guess again until their guess and
             # random_number are equivalent
-            print("You guessed the number incorrectly!")
             if int(users_guess) < int(random_number):
                 print("Your guess was too low. Try again")
             elif int(users_guess) > int(random_number):
