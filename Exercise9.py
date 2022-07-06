@@ -27,13 +27,14 @@ def main():
             users_guess = input("Enter a number from 1-9: ")
         else:
             # if the user and the randomly generated number do not match
-            # we will let the user know they are incorrect and ask them
-            # to play again until they enter 'exit'
+            # we will tell the user if their guess was too high or too low 
+            # and ask them to guess again until their guess and 
+            # random_number are equivalent
             print("You guessed the number incorrectly!")
-            print("Random number was: " + str(random_number))
-            print("your number was: " + str(users_guess))
-            print()
-            random_number = random.randrange(1, 10)
+            if int(users_guess) < int(random_number):
+                print("Your guess was too low. Try again")
+            elif int(users_guess) > int(random_number):
+                print("Your guess was too high. Try again")
             users_guess = input("Enter a number from 1-9: ")
 
     # if user_guess == 'exit' we will
