@@ -1,23 +1,43 @@
 #! /urs/bin/env python3
 
-# odd_or_even_function: this function will take in one integer parameter
-# returning: print statements to console to inform user if the numbered entered
-# was an even, odd, or divisible by 4.
-def odd_or_even_function(num, check):
+"""
+PROGRAMMER: Aiden Peace
+DATE: 6/24/2022
+TITLE: Exercise 1 : Guessing Game One
+DESCRIPTION: Create a program that asks the user
+to enter their name and their age. Print out a
+message addressed to them that tells them the year
+that they will turn 100 years old.
+"""
 
-    # Calculating and outputting when num will be even but not divisible by 4
+
+def odd_or_even_function(num, check):
+    """
+    FUNCTION DESCRIPTION:
+
+    GOAL  : This function will determine if
+            the user entered an even, odd,
+            or divisible by 4 number.
+    INPUT : This function will take in one
+            integer in as its parameter.
+    OUTPUT: print statements to console to
+            inform user if the numbered entered
+            was an even, odd, or divisible by 4.
+    """
+
+    # Calculating when num will be even but not divisible by 4
     if int(num) % 2 == 0 and int(num) % 4 != 0:
         print("The number " + str(num) + " is an even number")
 
-    # Calculating and outputting when num will be divisible by 4
+    # Calculating when num will be divisible by 4
     elif int(num) % 2 == 0 and int(num) % 4 == 0:
         print("The number " + str(num) + " is an number divisible by 4.")
 
-    # Outputting when num will be odd
+    # Calculating when num will be odd
     else:
         print("The number " + str(num) + " is an odd number")
 
-    # Calculating and outputting when num can or can't divide evenly into check
+    # Calculating when num can or can't divide evenly into check
     if int(num) % int(check) == 0:
         print(str(num) + " divides evenly by " + str(check))
     else:
@@ -30,8 +50,9 @@ def main():
     print()
 
     # user will be prompted to enter a number
-    # this function will run until the user enters 'x'
-    # then that will trigger the while loop to close
+    # this program will run until the user enters 'x'
+    # then that will trigger the while loop
+    # and program to close
     user_num = input("Enter a number: ")
     user_check = input("Enter a check number: ")
     while user_num != 'exit':
@@ -39,7 +60,7 @@ def main():
         print()
         user_num = input("Enter a number: ")
 
-    print("¡Hasta luego amigo!")
+    print("Goodbye!")
 
 
 if __name__ == "__main__":
