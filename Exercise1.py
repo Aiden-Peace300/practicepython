@@ -15,10 +15,11 @@ def year_when_age_100_function(age):
     """
     FUNCTION DESCRIPTION:
 
-    GOAL  : The goal is to calculate when the user
+    GOAL  : The goal of this function is
+            to calculate when the user
             will turn 100 years old.
-    INPUT : this function will take in one
-            integer in its parameter.
+    INPUT : This function will take in one
+            integer in as its parameter.
     OUTPUT: The output will be an integer
     """
     current_year = 2022
@@ -28,7 +29,7 @@ def year_when_age_100_function(age):
 
 def main():
 
-    # prompting user to input name and age
+    # prompting user to input their name and age
     user_name = input("Enter your name? ")
     user_age = int(input("Enter your age? "))
 
