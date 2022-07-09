@@ -1,7 +1,31 @@
 #! /usr/bin/env python3
 
+"""
+PROGRAMMER: Aiden Peace
+DATE: 6/24/2022
+TITLE: Exercise 4 - Divisors
+DESCRIPTION: Create a program that asks the user
+for a number and then prints out a list of all the
+divisors of that number. (If you don’t know what a
+divisor is, it is a number that divides evenly into
+another number. For example, 13 is a divisor of 26
+because 26 / 13 has no remainder.)
+"""
+
 
 def finding_divisor_function(num):
+    """
+    FUNCTION DESCRIPTION:
+
+    GOAL  : This function will check each number
+            in that range to see if it divides evenly
+            into users entered number.
+    INPUT : this function will take in
+            one number as a parameter.
+    OUTPUT: Print statements to console to inform
+            user of every number that evenly divides 
+            into the number that the user entered.
+    """
     
     divisor_list = []  # Creating an empty list
 
