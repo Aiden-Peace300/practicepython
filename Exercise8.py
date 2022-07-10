@@ -1,5 +1,16 @@
 #! /usr/bin/env python3
-# EXERCISE 8: Rock Paper Scissors program
+
+"""
+PROGRAMMER: Aiden Peace
+DATE: 7/6/2022
+TITLE: Exercise 8 - Rock Paper Scissors
+DESCRIPTION: Make a two-player Rock-Paper-Scissors game.
+
+Remember the rules:
+    Rock beats scissors
+    Scissor beats paper
+    Paper beats rock
+"""
 
 
 def main():
