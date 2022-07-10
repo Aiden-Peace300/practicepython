@@ -1,12 +1,27 @@
 #! /usr/bin/env python3
 
+"""
+PROGRAMMER: Aiden Peace
+DATE: 6/28/2022
+TITLE: Exercise 6 - String Lists
+DESCRIPTION: Ask the user for a string and print
+out whether this string is a palindrome or not.
+"""
 
-# palindrome_function: this function will take in one list and one string as a parameter
-# returning: print statements to console to inform user if the original_list is a palindrome
-# or not a palindrome
-# Note: A palindrome is a string that reads the same forwards and backwards.
+
 def palindrome_function(user_string):
+    """
+    FUNCTION DESCRIPTION:
 
+    GOAL  : This function will determine if a sting is a
+            palindrome. A palindrome is a string that reads
+            the same forwards and backwards.
+    INPUT : This function will take in
+            one string as a parameter.
+    OUTPUT:  print statements to console to
+             inform user if the original_list is a palindrome
+             or not a palindrome
+    """
     # 'original_list_no_whitespaces' is a list that
     # holds the same value as 'user_string' but with no
     # whitespaces and lower case
