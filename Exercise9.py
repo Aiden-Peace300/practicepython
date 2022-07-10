@@ -2,7 +2,15 @@
 # importing the random module
 import random
 
-# Exercise 9 : Guessing Game One
+"""
+PROGRAMMER: Aiden Peace 
+DATE: 7/6/2022
+TITLE: Exercise 9 : Guessing Game One
+DESCRIPTION: Write a program that takes a list of numbers 
+(for example, a = [5, 10, 15, 20, 25]) and makes a new 
+list of only the first and last elements of the given list. 
+For practice, write this code inside a function.
+"""
 
 
 def main():
@@ -34,7 +42,7 @@ def main():
             # if the user and the randomly generated number do not match
             # we will tell the user if their guess was too high or too low
             # and ask them to guess again until their guess and
-            # random_number are equivalent 
+            # random_number are equivalent
             if int(users_guess) < int(random_number):
                 print("Your guess was too low. Try again")
             elif int(users_guess) > int(random_number):
